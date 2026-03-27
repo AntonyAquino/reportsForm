@@ -3,7 +3,7 @@
 Aplicación de escritorio desarrollada en **C# con WinForms** y conexión a base de datos **MySQL**. Genera reportes dinámicos de ventas seleccionando el tipo desde un menú desplegable.
 
 ## 🖥️ Vista previa
-[![imagen-2026-03-27-160930777.png](https://i.postimg.cc/MGsv7h8k/imagen-2026-03-27-160930777.png)](https://postimg.cc/cKnxZkHT)
+[![imagen-2026-03-27-163342634.png](https://i.postimg.cc/mrMTDJ2X/imagen-2026-03-27-163342634.png)](https://postimg.cc/PLtgV6DY)
 
 ## 🚀 Funcionalidades
 - 📦 Reporte de producto más vendido
