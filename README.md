@@ -1,6 +1,7 @@
-# 📊 Sistema de Reportes de Ventas
 
-Aplicación de escritorio desarrollada en **C# con WinForms** y conexión a base de datos **MySQL**. Genera reportes dinámicos de ventas seleccionando el tipo desde un menú desplegable.
+# 📊 Sistema de Reportes de Ventas con Exportación a Excel
+
+Aplicación de escritorio en **C# WinForms** conectada a **MySQL** que genera reportes dinámicos de ventas y los exporta directamente a Excel.
 
 ## 🖥️ Vista previa
 [![imagen-2026-03-27-163342634.png](https://i.postimg.cc/mrMTDJ2X/imagen-2026-03-27-163342634.png)](https://postimg.cc/PLtgV6DY)
@@ -9,21 +10,22 @@ Aplicación de escritorio desarrollada en **C# con WinForms** y conexión a base
 - 📦 Reporte de producto más vendido
 - 💰 Reporte de total de ingresos por producto
 - 📅 Reporte de ventas por día
-- 🔄 Visualización dinámica en tabla (DataGridView)
-- ❌ Botón para cerrar la aplicación
+- 📤 Exportación de reportes a Excel (.xlsx)
+- 🔄 Visualización dinámica en DataGridView
 
 ## 🛠️ Tecnologías usadas
 - C# .NET 4.7.2 — WinForms
 - MySQL
-- MySql.Data (conector oficial)
-- ConfigurationManager (conexión desde App.config)
+- MySql.Data
+- ClosedXML (exportación a Excel)
+- ConfigurationManager
 
-## ⚙️ Requisitos para correrlo
+## ⚙️ Requisitos
 - Visual Studio 2022 o superior
-- MySQL Server corriendo localmente
-- Paquetes NuGet: `MySql.Data` y `System.Configuration`
+- MySQL Server local
+- NuGet: `MySql.Data`, `ClosedXML`
 
-## 🗄️ Estructura de la base de datos
+## 🗄️ Base de datos
 ```sql
 CREATE DATABASE sistema_ventas;
 
@@ -42,23 +44,16 @@ CREATE TABLE ventas (
 );
 ```
 
-## ⚙️ Configuración de conexión
-En `App.config` actualiza con tus credenciales de MySQL:
-```xml
-<add name="MiBaseDatos"
-     connectionString="server=localhost;database=sistema_ventas;uid=TU_USUARIO;pwd=TU_PASSWORD;"
-     providerName="MySql.Data.MySqlClient"/>
-```
-
-## 📁 Estructura del proyecto
+## 📁 Estructura
 ```
 reportsForm/
-├── Form1.cs        — Formulario principal y lógica de reportes
-├── Conexion.cs     — Clase de conexión a MySQL
-└── App.config      — Configuración de cadena de conexión
+├── Form1.cs      — Formulario principal
+├── Conexion.cs   — Conexión MySQL
+└── App.config    — Cadena de conexión
 ```
 
 ## 👨‍💻 Autor
 **Steven Herrarte Aquino**  
+
 Estudiante de Ingeniería en Sistemas — Universidad Mariano Gálvez  
-📧 antonyaquino444@gmail.com
+
